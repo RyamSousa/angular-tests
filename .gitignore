@@ -44,3 +44,5 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+TESTS-Chrome_Headless_105.0.5195.127_(Windows_10).xml
+TESTS-Firefox_105.0_(Windows_10).xml

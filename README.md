@@ -24,3 +24,6 @@ fixture.detectChanges() for init the components lifecycles.
 # Module 5
 - By default, karma run the tests in chrome, for change that, install dependencies for other browsers, like 
 *karma-firefox-launcher*(install for Dev) and edit **karma.conf.js**
+- Custom launchers are used to override configurations of other lauchers or criate a laucher for plugins that 
+have no support
+- Use *karma-junit-reporter* to generate tests report to the CI tool

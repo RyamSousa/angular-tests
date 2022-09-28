@@ -10,6 +10,7 @@ module.exports = function (config) {
 			require("karma-chrome-launcher"),
 			require("karma-firefox-launcher"),
 			require("karma-jasmine-html-reporter"),
+			require("karma-junit-reporter"),
 			require("karma-coverage"),
 			require("@angular-devkit/build-angular/plugins/karma"),
 		],
@@ -29,5 +30,11 @@ module.exports = function (config) {
 		browsers: ["Chrome"],
 		singleRun: false,
 		restartOnFileChange: true,
+		customLaunchers: {
+			CustomFirefoxLauncher: {
+				base: "Firefox",
+				flags: ["-headless"],
+			},
+		},
 	});
 };
