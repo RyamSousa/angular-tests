@@ -26,4 +26,4 @@ fixture.detectChanges() for init the components lifecycles.
 *karma-firefox-launcher*(install for Dev) and edit **karma.conf.js**
 - Custom launchers are used to override configurations of other lauchers or criate a laucher for plugins that 
 have no support
-- Use *karma-junit-reporter* to generate tests report to the CI tool
+- Use *karma-junit-reporter* to generate tests report to the CI tool(install for Dev)
