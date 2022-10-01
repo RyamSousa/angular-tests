@@ -18,7 +18,9 @@
     is not neccesary to do a request ajax to get the template and TS
 - **ComponentFixture**: Is a wrapper that contains my component instance
 - by default, the lifecycles are not invoked in tests enviroment, so are neccessary to run 
-fixture.detectChanges() for init the components lifecycles.
+**fixture.detectChanges()** for init the components lifecycles.
+- Don´t call **fixture.detectChanges()** in the **beforeEach**, because we don´t have time to pass
+values for the attribute components before run **OnInit** method. 
 - **done** param is used to indentify that the test have been done, if is not called it return an error
 
 # Module 5
